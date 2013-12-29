@@ -30,7 +30,6 @@ function createTokenizer (rules, maxLength) {
       cb(new Error("Token exceeded maximum length of " + maxLength))
     }
     var token;
-    debugger
     while (token = getToken(subject)) {
       this.push(token)
       var len = token[1].length
